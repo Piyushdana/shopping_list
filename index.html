@@ -20,6 +20,10 @@
         <img src="images/note.png" alt="" />
         <h1>Shopping List</h1>
       </header>
+
+      <input class="name_input" type="text" id="name" placeholder="Enter The Holder Name">
+
+      <h6 id="info">Your Items in the list are:-</h6>
       <form id="item-form">
         <div class="form-control">
           <input
@@ -46,8 +50,8 @@
         />
       </div>
 
-      <ul id="item-list" class="items">
-        <li>
+      <ul id="item-list" class="items pdf">
+        <!-- <li>
           Apples
           <button class="remove-item btn-link text-red">
             <i class="fa-solid fa-xmark"></i>
@@ -60,22 +64,36 @@
           </button>
         </li>
         <li>
-          Oreos
+          Egg
           <button class="remove-item btn-link text-red">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </li>
+
+        <li>
+          EggNogs
+          <button class="remove-item btn-link text-red">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </li>
+
+
         <li>
           Milk
           <button class="remove-item btn-link text-red">
             <i class="fa-solid fa-xmark"></i>
           </button>
-        </li>
+        </li> -->
       </ul>
 
       <button id="clear" class="btn-clear">Clear All</button>
+
+      <button class="btnDownload" onclick="createPDF()" id="button">Download Pdf</button>
     </div>
 
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
